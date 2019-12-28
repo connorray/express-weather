@@ -1,11 +1,12 @@
 //jshint esversion:6
+import { config } from 'config';
 
 const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
 const app = express();
 
-const apiKey = '065cf25019b6ad85be98defe7afb2c94';
+const apiKey = config.apiKey;
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
