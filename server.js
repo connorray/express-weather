@@ -1,6 +1,5 @@
 //jshint esversion:6
 const myModule = require('./config');
-// import { config } from 'config';
 
 const express = require('express');
 const bodyParser = require('body-parser');
